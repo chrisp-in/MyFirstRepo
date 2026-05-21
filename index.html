@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="my favicon.png" />
+    <title>Savory Haven | Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Savory Haven</h1>
+      <p>Global Flavors · Local Soul</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+      <a href="register.html">Register</a>
+    </nav>
+
+    <div class="container">
+      <div class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="services.html">Catering Services</a></li>
+          <li><a href="services.html">Online Ordering</a></li>
+          <li><a href="gallery.html">Food Gallery</a></li>
+          <li><a href="blog.html">Recipe Guides</a></li>
+        </ul>
+        <h3>Today</h3>
+        <h2 id="day"></h2>
+        <h2 id="date"></h2>
+        <h2 id="time"></h2>
+
+        <h3>Food Categories</h3>
+        <ul>
+          <li>Italian Cuisine</li>
+          <li>Japanese Dishes</li>
+          <li>Mexican Specials</li>
+          <li>Indian Curries</li>
+          <li>Mediterranean</li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <h2>Welcome to Savory Haven</h2>
+        <p>
+          Savory Haven is a premier food and cuisine brand offering delicious
+          recipes, professional catering services, and unforgettable food
+          experiences. We bring together local and international flavors to
+          create something truly special.
+        </p>
+
+        <h3>Our Story</h3>
+        <p>
+          Founded in 2020, Savory Haven started as a small kitchen experiment
+          and grew into a full-service food brand. We believe that good food
+          brings people together, and we're passionate about sharing our love
+          for cooking with the world.
+        </p>
+
+        <h3>What We Offer</h3>
+        <ul>
+          <li>Authentic recipes from around the world</li>
+          <li>Professional catering for events and parties</li>
+          <li>Cooking classes for all skill levels</li>
+          <li>Online food ordering with delivery</li>
+        </ul>
+
+        <p>
+          Check out our <a href="services.html">services page</a> for pricing
+          details, or visit
+          <a href="https://www.bbcgoodfood.com/" target="_blank"
+            >BBC Good Food</a
+          >
+          for more recipe inspiration.
+        </p>
+      </div>
+
+      <div class="right">
+        <h3>Featured Dish</h3>
+        <img
+          src="images/food1.jpg"
+          alt="Featured dish"
+          style="width: 100%; border-radius: 5px"
+        />
+        <p><strong>Grilled Lemon Herb Chicken</strong></p>
+        <p>Marinated in fresh herbs and served with roasted vegetables.</p>
+
+        <h3>Special Offer</h3>
+        <p>20% off on first catering order! Use code: SAVORY20</p>
+
+        <h3>Opening Hours</h3>
+        <ul>
+          <li>Mon-Fri: 9am - 8pm</li>
+          <li>Sat: 10am - 6pm</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        © 2025 Savory Haven | 123 Food Street, Culinary City | Email:
+        hello@savoryhaven.com | Phone: +250 798 123 456
+      </p>
+      <p>Follow us: Facebook | Instagram | Twitter</p>
+    </footer>
+    <script>
+      let day = new Date().getDay();
+      let weekday;
+
+      switch (day) {
+        case 0:
+          weekday = "Today is Sunday";
+          break;
+        case 1:
+          weekday = "Today is Monday";
+          break;
+        case 2:
+          weekday = "Today is Tuesday";
+          break;
+        case 3:
+          weekday = "Today is Wednesday";
+          break;
+        case 4:
+          weekday = "Today is Thursday";
+          break;
+        case 5:
+          weekday = "Today is Friday";
+          break;
+        case 6:
+          weekday = "Today is Saturday";
+          break;
+      }
+
+      document.getElementById("demo").innerHTML = weekday;
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>

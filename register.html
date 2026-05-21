@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="my favicon.png" />
+    <title>Savory Haven | Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Savory Haven</h1>
+      <p>Global Flavors · Local Soul</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="faq.html">FAQ</a>
+      <a href="register.html">Register</a>
+    </nav>
+
+    <div class="container">
+      <div class="sidebar">
+        <h3>Benefits of Registering</h3>
+        <ul>
+          <li>Exclusive recipes</li>
+          <li>Discount coupons</li>
+          <li>Early access to events</li>
+          <li>Newsletter subscription</li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <h2>Create an Account</h2>
+        <p>
+          Join the Savory Haven community to get exclusive recipes, special
+          discounts, and updates about our events and services.
+        </p>
+
+        <form id="registerForm" onsubmit="return validateRegisterForm();">
+          <table style="width: 100%">
+            <tr>
+              <td style="width: 120px"><strong>Full Name:</strong></td>
+              <td>
+                <input
+                  type="text"
+                  id="regName"
+                  style="width: 100%; padding: 8px"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Email Address:</strong></td>
+              <td>
+                <input
+                  type="email"
+                  id="regEmail"
+                  style="width: 100%; padding: 8px"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Password:</strong></td>
+              <td>
+                <input
+                  type="password"
+                  id="regPassword"
+                  style="width: 100%; padding: 8px"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Confirm Password:</strong></td>
+              <td>
+                <input
+                  type="password"
+                  id="regConfirmPassword"
+                  style="width: 100%; padding: 8px"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <button
+                  type="submit"
+                  style="
+                    background-color: #e76f51;
+                    color: white;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 5px;
+                  "
+                >
+                  Register Now
+                </button>
+              </td>
+            </tr>
+          </table>
+        </form>
+        <p id="regFeedback" style="color: green; margin-top: 10px"></p>
+
+        <p>
+          <em>Already have an account? <a href="#">Login here</a></em>
+        </p>
+      </div>
+
+      <div class="right">
+        <h3>Special Offer</h3>
+        <p>
+          Register today and get 10% off your first order! Use code: WELCOME10
+        </p>
+
+        <h3>Newsletter</h3>
+        <p>Get weekly recipes and tips delivered to your inbox.</p>
+        <input
+          type="email"
+          placeholder="Your email"
+          style="width: 100%; padding: 5px; margin: 5px 0"
+        />
+        <button onclick="alert('Newsletter signup feature coming soon!')">
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        © 2025 Savory Haven | 123 Food Street, Culinary City | Email:
+        hello@savoryhaven.com | Phone: +250 798 123 456
+      </p>
+    </footer>
+  </body>
+</html>
